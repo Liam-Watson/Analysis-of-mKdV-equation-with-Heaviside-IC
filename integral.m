@@ -34,7 +34,7 @@ u = A*(Air(x,t, xP));
 inte(x,t, xP) = int(u, xP);
 x = -30:0.1:30;    
 XP = -30:0.1:30;
-time = 0.1:0.1:1;
+time = 0.001:0.001:0.002;
 % plot(x, A*heaviside(1/2 - abs(x))), drawnow
 Y = [A*heaviside(1/2-abs(x))];
 for t = time(2:length(time))
